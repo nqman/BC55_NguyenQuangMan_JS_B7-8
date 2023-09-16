@@ -31,7 +31,10 @@ domID("btnDemSo").onclick = function () {
       demSoDuong++;
     }
   }
-  document.getElementById("inDemSoDuong").innerHTML = "=> " + demSoDuong;
+  domID("inDemSoDuong").innerHTML = "=> " + demSoDuong;
+  if (demSoDuong === 0) {
+    domID("inDemSoDuong").innerHTML = "Mảng không có số dương";
+  }
 };
 
 // 3. Tìm số nhỏ nhất:
